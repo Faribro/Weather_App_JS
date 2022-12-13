@@ -73,6 +73,8 @@ function weatherDetails(info) {
       wIcon.src = "icons/cloud.svg";
     } else if ((id >= 500 && id <= 531) || (id >= 300 && id <= 321)) {
       wIcon.src = "icons/rain.svg";
+    } else {
+      wIcon.src = "cloudy-day-1.svg";
     }
 
     weatherPart.querySelector(".temp .numb").innerText = Math.floor(temp);
