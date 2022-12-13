@@ -75,6 +75,7 @@ function weatherDetails(info) {
       wIcon.src = "icons/rain.svg";
     } else {
       wIcon.src = "cloudy-day-1.svg";
+      console.log("I am faulty, FIX ME!");
     }
 
     weatherPart.querySelector(".temp .numb").innerText = Math.floor(temp);
