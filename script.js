@@ -59,7 +59,7 @@ function weatherDetails(info) {
   } else {
     const city = info.name;
     const country = info.sys.country;
-    const { description, id } = info.weather[0];
+    const { description, id } = info.weather;
     const { temp, feels_like, humidity } = info.main;
 
     if (id === 800) {
