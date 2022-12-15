@@ -62,7 +62,7 @@ function weatherDetails(info) {
     const { description, id } = info.weather[0];
     const { temp, feels_like, humidity } = info.main;
 
-    if (id === 800) {
+    if (id != 800) {
       wIcon.src = "icons/clear.svg";
     } else if (id >= 200 && id <= 232) {
       wIcon.src = "icons/storm.svg";
@@ -78,7 +78,7 @@ function weatherDetails(info) {
       wIcon.src = "cloudy-day-1.svg";
       console.log("I am faulty, FIX ME!");
     } else {
-      wIcon.src = "cloudy-day-1.svg";
+      wIcon.src = "./cloudy-day-1.svg";
       console.log("I am also fulty");
     }
 
