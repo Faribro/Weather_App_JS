@@ -55,14 +55,14 @@ function weatherDetails(info) {
   if (info.cod === "404") {
     infoTxt.classList.replace("pending", "error");
     infoTxt.innerText = `${inputField.value} isn't a valid city name`;
-    wIcon.src = "cloudy-day-1.svg";
+    wIcon.src = "./icons/cloudy-day-1.svg";
   } else {
     const city = info.name;
     const country = info.sys.country;
     const { description, id } = info.weather[0];
     const { temp, feels_like, humidity } = info.main;
 
-    if (id != 800) {
+    if (id === 800) {
       wIcon.src = "icons/clear.svg";
     } else if (id >= 200 && id <= 232) {
       wIcon.src = "icons/storm.svg";
@@ -75,10 +75,10 @@ function weatherDetails(info) {
     } else if ((id >= 500 && id <= 531) || (id >= 300 && id <= 321)) {
       wIcon.src = "icons/rain.svg";
     } else if(id === 404){
-      wIcon.src = "icons/cloudy-day-1.svg";
+      wIcon.src = "./icons/cloudy-day-1.svg";
       console.log("I am faulty, FIX ME!");
     } else {
-      wIcon.src = "icons/cloudy-day-1.svg";
+      wIcon.src = "./icons/cloudy-day-1.svg";
       console.log("I am also fulty");
     }
 
