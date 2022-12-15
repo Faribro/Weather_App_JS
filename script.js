@@ -55,7 +55,7 @@ function weatherDetails(info) {
   if (info.cod === "404") {
     infoTxt.classList.replace("pending", "error");
     infoTxt.innerText = `${inputField.value} isn't a valid city name`;
-    wIcon.src = "cloudy-day-1.svg";
+    wIcon.src = "./cloudy-day-1.svg";
   } else {
     const city = info.name;
     const country = info.sys.country;
