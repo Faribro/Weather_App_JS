@@ -79,7 +79,7 @@ function weatherDetails(info) {
       console.log("I am faulty, FIX ME!");
     } else {
       wIcon.src = "cloudy-day-1.svg";
-      console.log("I am also fulty);
+      console.log("I am also fulty");
     }
 
     weatherPart.querySelector(".temp .numb").innerText = Math.floor(temp);
